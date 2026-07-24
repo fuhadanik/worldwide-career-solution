@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worldwide Career Solution | Student Consultancy, Travel & Documentation</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts: Inter & Hind Siliguri (Bengali) -->
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Hind Siliguri', 'Inter', 'sans-serif'],
+            bengali: ['Hind Siliguri', 'sans-serif'],
+            english: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f5ff',
+              100: '#e0ebff',
+              200: '#bae6fd',
+              600: '#2563eb',
+              700: '#1d4ed8',
+              800: '#0c2e6b',
+              900: '#0a214d',
+            },
+            accent: {
+              500: '#f97316',
+              600: '#ea580c',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Hind Siliguri', 'Inter', sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+    .gradient-hero {
+      background: linear-gradient(135deg, #0a214d 0%, #0c2e6b 60%, #1e3a8a 100%);
+    }
+    .gradient-orange {
+      background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+    }
+    .destination-card {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .destination-card:hover {
+      transform: translateY(-6px);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-accent-500 selection:text-white">
+
+  <!-- TOP HOTLINE STRIP -->
+  <header class="bg-brand-900 text-slate-200 text-xs py-2 px-4 border-b border-brand-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center gap-4 flex-wrap">
+        <span class="flex items-center gap-1.5 font-medium text-emerald-400">
+          <i class="fa-solid fa-location-dot"></i> গ্রীন রোড, কনসেপ্ট টাওয়ার, ঢাকা-১২০৫
+        </span>
+        <span class="hidden md:inline-flex items-center gap-1.5 text-slate-300">
+          <i class="fa-regular fa-clock text-accent-500"></i> শনি - বৃহস্পতি: সকাল ১০:০০ - সন্ধ্যা ৭:০০
+        </span>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:+8801408200200" class="hover:text-amber-400 transition flex items-center gap-1 font-mono">
+          <i class="fa-solid fa-phone text-accent-500"></i> +8801408200200
+        </a>
+        <a href="https://wa.me/8801940904090" target="_blank" class="hover:text-emerald-400 transition flex items-center gap-1 font-mono">
+          <i class="fa-brands fa-whatsapp text-emerald-500"></i> +8801940904090
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN NAVIGATION -->
+  <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="relative w-12 h-12 flex items-center justify-center bg-brand-50 rounded-xl group-hover:scale-105 transition">
+            <svg viewBox="0 0 100 100" class="w-10 h-10">
+              <circle cx="50" cy="50" r="42" fill="none" stroke="#cbd5e1" stroke-width="4"/>
+              <path d="M 15 50 Q 50 10 85 50 Q 50 90 15 50 Z" fill="none" stroke="#f97316" stroke-width="3"/>
+              <path d="M 50 10 A 40 40 0 0 1 50 90 A 40 40 0 0 1 50 10" fill="none" stroke="#0c2e6b" stroke-width="3"/>
+            </svg>
+            <i class="fa-solid fa-plane text-brand-800 text-xl absolute transform -rotate-12 group-hover:translate-x-0.5 transition"></i>
+          </div>
+          <div>
+            <span class="text-xl md:text-2xl font-black text-brand-900 tracking-tight block leading-none font-english">
+              Worldwide
+            </span>
+            <span class="text-[11px] font-bold tracking-widest text-accent-500 uppercase block font-english">
+              CAREER SOLUTION
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden lg:flex items-center gap-7 font-medium text-slate-700 text-sm">
+          <a href="#about" class="hover:text-brand-800 transition py-1">আমাদের সম্পর্কে</a>
+          <a href="#regions" class="hover:text-brand-800 transition py-1">গন্তব্যসমূহ</a>
+          <a href="#services" class="hover:text-brand-800 transition py-1">সেবাসমূহ</a>
+          <a href="#why-us" class="hover:text-brand-800 transition py-1">কেন আমরা?</a>
+          <a href="#notice" class="hover:text-brand-800 transition py-1">নীতিমালা</a>
+          <a href="#contact" class="hover:text-brand-800 transition py-1">যোগাযোগ</a>
+        </div>
+
+        <!-- Right Action Button -->
+        <div class="hidden sm:flex items-center gap-3">
+          <button onclick="openAssessmentModal()" class="px-4 py-2.5 bg-brand-800 hover:bg-brand-900 text-white rounded-xl font-bold text-xs shadow-lg shadow-brand-900/20 hover:shadow-brand-900/40 transition flex items-center gap-2">
+            <i class="fa-solid fa-graduation-cap text-amber-400"></i> ফ্রি অ্যাসেসমেন্ট
+          </button>
+        </div>
+
+        <!-- Mobile Menu Trigger -->
+        <div class="lg:hidden flex items-center">
+          <button onclick="toggleMobileMenu()" class="text-slate-700 hover:text-brand-800 p-2 text-xl focus:outline-none">
+            <i class="fa-solid fa-bars-staggered" id="menuIcon"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3 font-medium text-sm">
+      <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-800 border-b border-slate-100">আমাদের সম্পর্কে</a>
+      <a href="#regions" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-800 border-b border-slate-100">গন্তব্যসমূহ</a>
+      <a href="#services" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-800 border-b border-slate-100">সেবাসমূহ</a>
+      <a href="#why-us" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-800 border-b border-slate-100">কেন আমরা?</a>
+      <a href="#notice" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-800 border-b border-slate-100">নীতিমালা</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 hover:text-brand-800 border-b border-slate-100">যোগাযোগ</a>
+      <button onclick="toggleMobileMenu(); openAssessmentModal();" class="w-full mt-2 py-3 bg-brand-800 text-white rounded-xl font-bold text-xs flex items-center justify-center gap-2">
+        <i class="fa-solid fa-graduation-cap text-amber-400"></i> ফ্রি অ্যাসেসমেন্ট ফর্ম
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="gradient-hero text-white relative overflow-hidden pt-12 pb-20 md:py-24">
+    <!-- Animated background accents -->
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Details -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-semibold text-amber-300 border border-white/10">
+            <i class="fa-solid fa-award text-amber-400"></i> বিশ্বস্ত স্টুডেন্ট কনসালটেন্সি ও ট্রাভেল এজেন্সি
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight">
+            উচ্চশিক্ষা ও ভ্রমণের <br class="hidden sm:inline">
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-orange-300 to-amber-200">
+              নির্ভরযোগ্য বিশ্বস্ত সঙ্গী
+            </span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-200 leading-relaxed max-w-2xl font-light">
+            আন্তর্জাতিক শিক্ষা, ট্যুরিস্ট ভিসা, এয়ার টিকিটিং এবং নিখুঁত ডকুমেন্টেশন সহায়তায় আমরা আছি আপনার পাশে। সঠিক দিকনির্দেশনা ও স্বচ্ছ প্রক্রিয়ায় স্বপ্নের পথ সহজ করুন।
+          </p>
+
+          <p class="italic text-amber-300 font-serif text-sm md:text-base font-medium">
+            "The World Is Waiting, Let's Get You There."
+          </p>
+
+          <!-- Hero Action CTAs -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#assessment-calculator" class="px-6 py-3.5 bg-accent-500 hover:bg-accent-600 text-white font-bold rounded-xl shadow-lg shadow-accent-500/30 transition flex items-center gap-2.5 text-sm">
+              <i class="fa-solid fa-paper-plane"></i> যোগ্যতা যাচাই করুন
+            </a>
+            <a href="#services" class="px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white font-semibold rounded-xl border border-white/20 backdrop-blur-sm transition flex items-center gap-2 text-sm">
+              <i class="fa-solid fa-grid-2"></i> সেবাসমূহ দেখুন
+            </a>
+          </div>
+
+          <!-- Feature Badges -->
+          <div class="grid grid-cols-3 gap-3 pt-6 border-t border-white/10 max-w-xl mx-auto lg:mx-0 text-center">
+            <div class="p-2">
+              <span class="block text-2xl font-black text-amber-400 font-mono">100%</span>
+              <span class="text-xs text-slate-300">স্বচ্ছ প্রক্রিয়া</span>
+            </div>
+            <div class="p-2 border-x border-white/10">
+              <span class="block text-2xl font-black text-amber-400 font-mono">50+</span>
+              <span class="text-xs text-slate-300">বিশ্ববিদ্যালয় নেটওয়ার্ক</span>
+            </div>
+            <div class="p-2">
+              <span class="block text-2xl font-black text-amber-400 font-mono">24/7</span>
+              <span class="text-xs text-slate-300">কনসালটেশন সাপোর্ট</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Hero Interactive Quick Eligibility Card -->
+        <div class="lg:col-span-5">
+          <div class="glass-card text-slate-800 p-6 sm:p-8 rounded-3xl shadow-2xl border border-white/40">
+            
+            <div class="flex items-center gap-3 mb-5 border-b border-slate-200 pb-4">
+              <div class="w-10 h-10 rounded-xl bg-brand-800 text-white flex items-center justify-center font-bold text-lg">
+                <i class="fa-solid fa-compass"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-base text-brand-900">দ্রুত আবেদন বা পরামর্শ</h3>
+                <p class="text-xs text-slate-500">আপনার প্রয়োজনীয় সেবা ও গন্তব্য বেছে নিন</p>
+              </div>
+            </div>
+
+            <form onsubmit="event.preventDefault(); submitQuickLead();" class="space-y-4">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">আপনার নাম *</label>
+                <input type="text" id="quickName" required placeholder="আপনার পুরো নাম লিখুন" class="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-800 focus:outline-none">
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">মোবাইল নম্বর (WhatsApp) *</label>
+                <input type="tel" id="quickPhone" required placeholder="+8801XXXXXXXXX" class="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-800 focus:outline-none">
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">কাঙ্ক্ষিত সেবা</label>
+                  <select id="quickService" class="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-800 focus:outline-none bg-white">
+                    <option value="Student Visa">স্টুডেন্ট ভিসা</option>
+                    <option value="Air Ticket">এয়ার টিকিট</option>
+                    <option value="Tour Package">ট্যুর প্যাকেজ</option>
+                    <option value="Documentation">ডকুমেন্টেশন</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">পছন্দের অঞ্চল</label>
+                  <select id="quickRegion" class="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-800 focus:outline-none bg-white">
+                    <option value="Europe">ইউরোপ (Europe)</option>
+                    <option value="America">আমেরিকা (USA/Canada)</option>
+                    <option value="Australia">অস্ট্রেলিয়া (Australia)</option>
+                    <option value="Asia">এশিয়া (Asia)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">শিক্ষাগত যোগ্যতা / মেসেজ</label>
+                <textarea id="quickMessage" rows="2" placeholder="আপনার বর্তমান শিক্ষাগত যোগ্যতা বা বিবরণ..." class="w-full px-3.5 py-2 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-800 focus:outline-none"></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3 bg-brand-800 hover:bg-brand-900 text-white font-bold text-xs rounded-xl shadow-md transition flex items-center justify-center gap-2">
+                <i class="fa-brands fa-whatsapp text-emerald-400 text-base"></i> সরাসরি হোয়াটসঅ্যাপে পরামর্শ নিন
+              </button>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US SECTION -->
+  <section id="about" class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Visual Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-slate-100 p-8 text-center gradient-hero text-white">
+            <div class="w-20 h-20 mx-auto bg-amber-500/20 rounded-full flex items-center justify-center text-amber-400 text-3xl mb-4">
+              <i class="fa-solid fa-earth-americas"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-2">বিশ্বজুড়ে আপনার সাফল্য</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-6">
+              আমরা শিক্ষার্থী, ভ্রমণকারী এবং আন্তর্জাতিক পাসপোর্টধারীদের সঠিক ও নৈতিক তথ্য প্রদানে প্রতিশ্রুাবদ্ধ।
+            </p>
+            <div class="bg-white/10 backdrop-blur-md p-4 rounded-2xl text-left space-y-2 border border-white/10 text-xs">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-check-circle text-emerald-400"></i>
+                <span>পেশাদার অভিজ্ঞতা সম্পন্ন কনসালটেন্ট টিম</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-check-circle text-emerald-400"></i>
+                <span>সঠিক তথ্য ও দায়িত্বশীল গাইডেন্স</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-check-circle text-emerald-400"></i>
+                <span>স্বচ্ছ ও নিরাপদ সার্ভিস চার্জ সিস্টেম</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right About Text -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 bg-brand-50 text-brand-800 px-3.5 py-1 rounded-full text-xs font-bold">
+            <i class="fa-solid fa-users text-accent-500"></i> আমাদের সম্পর্কে
+          </div>
+
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-900 leading-tight">
+            আন্তর্জাতিক শিক্ষা ও ভ্রমণ সেবায় <br class="hidden sm:inline">
+            <span class="text-accent-500">পেশাদার ও বিশ্বস্ত নাম</span>
+          </h2>
+
+          <p class="text-slate-600 leading-relaxed text-sm md:text-base">
+            <strong class="text-brand-900">Worldwide Career Solution</strong> আন্তর্জাতিক শিক্ষা, ভ্রমণ এবং প্রয়োজনীয় ডকুমেন্টেশন সংক্রান্ত সেবায় পেশাদার সহায়তা প্রদান করে। আমরা শিক্ষার্থী, ভ্রমণকারী এবং সাধারণ গ্রাহকদের জন্য সঠিক তথ্য, দায়িত্বশীল পরামর্শ এবং প্রয়োজনীয় সাপোর্ট নিশ্চিত করার মাধ্যমে তাদের লক্ষ্য পূরণে সহযোগিতা করি।
+          </p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200/80 flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center text-lg flex-shrink-0">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-brand-900">শিক্ষার্থীদের ভর্তি ও ভিসা</h4>
+                <p class="text-xs text-slate-500 mt-0.5">শীর্ষস্থানীয় বিশ্ববিদ্যালয়সমূহে আবেদন ও ভিসা সহায়তা।</p>
+              </div>
+            </div>
+
+            <div class="p-4 bg-slate-50 rounded-2xl border border-slate-200/80 flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center text-lg flex-shrink-0">
+                <i class="fa-solid fa-plane-departure"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-sm text-brand-900">ট্রাভেল ও টিকিট কনসালটেন্সি</h4>
+                <p class="text-xs text-slate-500 mt-0.5">বিটুবি টিকিট, ট্যুর প্যাকেজ ও কর্পোরেট সহায়তা।</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DESTINATIONS / REGIONS SECTION -->
+  <section id="regions" class="py-16 md:py-20 bg-slate-50 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <div class="inline-flex items-center gap-2 bg-brand-50 text-brand-800 px-3.5 py-1 rounded-full text-xs font-bold mb-3">
+          <i class="fa-solid fa-globe text-accent-500"></i> গন্তব্যসমূহ
+        </div>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-900">
+          আমরা যেসব অঞ্চলে স্টুডেন্ট ভিসা সাপোর্ট প্রদান করি
+        </h2>
+        <p class="text-slate-500 text-xs sm:text-sm mt-2">
+          আপনার পছন্দসই আন্তর্জাতিক গন্তব্যে উচ্চশিক্ষা ও ক্যারিয়ার গড়ার পথ সুগম করতে বিস্তারিত জানুন
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Region 1: Asia -->
+        <div onclick="openRegionModal('Asia')" class="destination-card bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-xl hover:border-brand-600 cursor-pointer group">
+          <div class="w-14 h-14 rounded-2xl bg-blue-50 text-brand-800 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+            <i class="fa-solid fa-mountain-city"></i>
+          </div>
+          <span class="text-xs font-bold text-accent-500 uppercase tracking-widest block mb-1">অঞ্চল ০১</span>
+          <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-800 transition">এশিয়া (Asia)</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+            মালয়েশিয়া, চীন, জাপান, দক্ষিণ কোরিয়া, থাইল্যান্ড সহ প্রগ্রেসিভ এডুকেশন হাব।
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-brand-800">
+            <span>বিস্তারিত দেখুন</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+          </div>
+        </div>
+
+        <!-- Region 2: Europe -->
+        <div onclick="openRegionModal('Europe')" class="destination-card bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-xl hover:border-brand-600 cursor-pointer group">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+            <i class="fa-solid fa-building-columns"></i>
+          </div>
+          <span class="text-xs font-bold text-accent-500 uppercase tracking-widest block mb-1">অঞ্চল ০২</span>
+          <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-800 transition">ইউরোপ (Europe)</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+            ইউকে, জার্মানি, স্ক্যান্ডিনেভিয়ান দেশসমূহ, হাঙ্গেরি, পোল্যান্ড ও শেঙ্গেন ভুক্ত দেশসমূহ।
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-brand-800">
+            <span>বিস্তারিত দেখুন</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+          </div>
+        </div>
+
+        <!-- Region 3: America -->
+        <div onclick="openRegionModal('America')" class="destination-card bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-xl hover:border-brand-600 cursor-pointer group">
+          <div class="w-14 h-14 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+            <i class="fa-solid fa-statue-of-liberty"></i>
+          </div>
+          <span class="text-xs font-bold text-accent-500 uppercase tracking-widest block mb-1">অঞ্চল ০৩</span>
+          <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-800 transition">আমেরিকা (America)</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+            যুক্তরাষ্ট্র (USA) ও কানাডা (Canada)-এর শীর্ষ র‍্যাঙ্কিং বিশ্ববিদ্যালয় ও কলেজসমূহ।
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-brand-800">
+            <span>বিস্তারিত দেখুন</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+          </div>
+        </div>
+
+        <!-- Region 4: Australia -->
+        <div onclick="openRegionModal('Australia')" class="destination-card bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-xl hover:border-brand-600 cursor-pointer group">
+          <div class="w-14 h-14 rounded-2xl bg-purple-50 text-purple-700 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+            <i class="fa-solid fa-earth-oceania"></i>
+          </div>
+          <span class="text-xs font-bold text-accent-500 uppercase tracking-widest block mb-1">অঞ্চল ০৪</span>
+          <h3 class="text-xl font-bold text-slate-900 group-hover:text-brand-800 transition">অস্ট্রেলিয়া (Australia)</h3>
+          <p class="text-xs text-slate-500 mt-2 leading-relaxed">
+            অস্ট্রেলিয়া ও নিউজিল্যান্ডে স্কলারশিপ সহ ব্যাচেলর, মাস্টার্স ও পোস্ট গ্রাজুয়েট প্রোগ্রাম।
+          </p>
+          <div class="mt-4 pt-4 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-brand-800">
+            <span>বিস্তারিত দেখুন</span>
+            <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 3 CORE SERVICES SECTION -->
+  <section id="services" class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 bg-brand-50 text-brand-800 px-3.5 py-1 rounded-full text-xs font-bold mb-3">
+          <i class="fa-solid fa-briefcase text-accent-500"></i> আমাদের সেবাসমূহ
+        </div>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-brand-900">
+          আমাদের মূল ৩টি সেবা খাত
+        </h2>
+        <p class="text-slate-500 text-xs sm:text-sm mt-2">
+          পেশাদার কনসালটেন্ট দ্বারা পরিচালিত প্রতিটি ধাপে নিবেদিত সেবা
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Service 1: Student Consultancy -->
+        <div class="bg-slate-50/80 rounded-3xl p-6 sm:p-7 border border-slate-200 flex flex-col justify-between hover:shadow-xl transition group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-brand-900 text-white flex items-center justify-center text-2xl mb-6 shadow-md">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            
+            <h3 class="text-xl font-bold text-brand-900 mb-4 pb-2 border-b border-slate-200">
+              স্টুডেন্ট কনসালটেন্সি সেবা
+            </h3>
+
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-700">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>বিশ্ববিদ্যালয় ও কলেজ আবেদন সহায়তা</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>ভর্তি সংক্রান্ত সঠিক পরামর্শ</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>স্টুডেন্ট ভিসা প্রসেসিং সাপোর্ট</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>ডকুমেন্ট প্রস্তুতি সহায়তা</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>SOP / Motivation Letter Guidance</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>ইন্টারভিউ প্রস্তুতি সহায়তা</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>প্রি-ডিপার্চার নির্দেশনা (Pre-departure)</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-slate-200">
+            <button onclick="openAssessmentModal('Student Consultancy')" class="w-full py-2.5 bg-brand-800 group-hover:bg-brand-900 text-white font-bold text-xs rounded-xl transition flex items-center justify-center gap-2">
+              <span>পরামর্শের বুকিং দিন</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 2: Travel Services -->
+        <div class="bg-slate-50/80 rounded-3xl p-6 sm:p-7 border border-slate-200 flex flex-col justify-between hover:shadow-xl transition group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-emerald-700 text-white flex items-center justify-center text-2xl mb-6 shadow-md">
+              <i class="fa-solid fa-plane-up"></i>
+            </div>
+            
+            <h3 class="text-xl font-bold text-brand-900 mb-4 pb-2 border-b border-slate-200">
+              ট্রাভেল সার্ভিসেস
+            </h3>
+
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-700">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>Worldwide Air Ticketing (B2B & B2C)</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>Worldwide Tour Packages (B2B)</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>Travel Consultation & Itinerary</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>Travel Planning Assistance</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>Individual & Corporate Travel Support</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>হোটেল বুকিং ও ট্রানজিট সহায়তা</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-slate-200">
+            <button onclick="openAssessmentModal('Travel Services')" class="w-full py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs rounded-xl transition flex items-center justify-center gap-2">
+              <span>ট্যুর বা টিকিট কোয়েস্ট</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Service 3: Documentation Support -->
+        <div class="bg-slate-50/80 rounded-3xl p-6 sm:p-7 border border-slate-200 flex flex-col justify-between hover:shadow-xl transition group">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-purple-700 text-white flex items-center justify-center text-2xl mb-6 shadow-md">
+              <i class="fa-solid fa-file-shield"></i>
+            </div>
+            
+            <h3 class="text-xl font-bold text-brand-900 mb-4 pb-2 border-b border-slate-200">
+              ডকুমেন্টেশন সাপোর্ট
+            </h3>
+
+            <ul class="space-y-3 text-xs sm:text-sm text-slate-700">
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>পাসপোর্ট সংক্রান্ত প্রাথমিক সহায়তা</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>ট্রাভেল ডকুমেন্টেশন চেক ও প্রস্তুত</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>ডকুমেন্ট অনুবাদ (Translation) সহায়তা</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>Attestation Support (Ministry & Embassy)</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>Embassy Appointment Booking Support</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-600 mt-1 flex-shrink-0"></i>
+                <span>অন্যান্য প্রয়োজনীয় ভিসা ডকুমেন্টেশন সেবা</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-slate-200">
+            <button onclick="openAssessmentModal('Documentation Support')" class="w-full py-2.5 bg-purple-700 hover:bg-purple-800 text-white font-bold text-xs rounded-xl transition flex items-center justify-center gap-2">
+              <span>ডকুমেন্ট প্রসেসিং পাঠান</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US SECTION -->
+  <section id="why-us" class="py-16 md:py-20 bg-slate-900 text-white relative overflow-hidden">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 bg-white/10 text-amber-300 px-3.5 py-1 rounded-full text-xs font-bold mb-3 border border-white/10">
+          <i class="fa-solid fa-thumbs-up"></i> কেন নির্বাচন করবেন?
+        </div>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white">
+          কেন Worldwide Career Solution?
+        </h2>
+        <p class="text-slate-400 text-xs sm:text-sm mt-2">
+          আমাদের স্বচ্ছ ও দায়িত্বশীল পথচলাই গ্রাহকদের মাঝে সুদৃঢ় আস্থা তৈরি করেছে
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+        
+        <!-- Feature 1 -->
+        <div class="p-5 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 hover:border-amber-400/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-users-gear"></i>
+          </div>
+          <h3 class="font-bold text-sm sm:text-base text-white">অভিজ্ঞ ও পেশাদার টিম</h3>
+          <p class="text-xs text-slate-400 mt-1">দক্ষ কনসালটেন্টদের অভিজ্ঞ পরামর্শ।</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="p-5 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 hover:border-amber-400/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <h3 class="font-bold text-sm sm:text-base text-white">স্বচ্ছ ও নৈতিক কার্যপ্রক্রিয়া</h3>
+          <p class="text-xs text-slate-400 mt-1">কোনো লুকানো শর্ত বা অস্পষ্টতা নেই।</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="p-5 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 hover:border-amber-400/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <h3 class="font-bold text-sm sm:text-base text-white">আপডেটেড তথ্য ও পরামর্শ</h3>
+          <p class="text-xs text-slate-400 mt-1">সর্বশেষ ভিসা নীতিমালার সঠিক গাইড।</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="p-5 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 hover:border-amber-400/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-user-gear"></i>
+          </div>
+          <h3 class="font-bold text-sm sm:text-base text-white">ক্লায়েন্ট-কেন্দ্রিক সেবা</h3>
+          <p class="text-xs text-slate-400 mt-1">প্রতিটি গ্রাহকের প্রয়োজন অনুযায়ী একক গুরুত্ব।</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="p-5 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 hover:border-amber-400/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-rose-500/20 text-rose-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+          </div>
+          <h3 class="font-bold text-sm sm:text-base text-white">নিয়মিত ফলো-আপ</h3>
+          <p class="text-xs text-slate-400 mt-1">ফাইলের হালনাগাদ তথ্যের দ্রুত আপডেট।</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="p-5 bg-white/5 backdrop-blur-md rounded-2xl border border-white/10 hover:border-amber-400/50 transition">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <h3 class="font-bold text-sm sm:text-base text-white">দীর্ঘমেয়াদি সহায়তা</h3>
+          <p class="text-xs text-slate-400 mt-1">বিদেশে পৌঁছানোর পরও প্রয়োজনীয় দিকনির্দেশনা।</p>
+        </div>
+
+        <!-- Feature 7 & 8 Combined banner -->
+        <div class="col-span-2 p-5 bg-gradient-to-r from-brand-800 to-brand-900 rounded-2xl border border-amber-500/30 flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-amber-400 text-brand-900 flex items-center justify-center text-2xl flex-shrink-0 font-bold">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm sm:text-base text-white">দায়িত্বশীল ও সৎ সেবা প্রদান</h3>
+            <p class="text-xs text-slate-300 mt-0.5">আমরা প্রতিটি শিক্ষার্থীর উজ্জ্বল ভবিষ্যৎ বিনির্মাণে সর্বোচ্চ দায়বদ্ধতার সাথে কাজ করি।</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- IMPORTANT ETHICAL NOTICE BANNER -->
+  <section id="notice" class="py-12 bg-amber-50 border-y border-amber-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-white p-6 sm:p-8 rounded-3xl border-2 border-amber-400 shadow-md">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-red-600 text-white flex items-center justify-center text-xl font-bold flex-shrink-0">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-red-700">গুরুত্বপূর্ণ তথ্য ও নীতি ঘোষণা</h3>
+            <p class="text-xs text-slate-500">স্বচ্ছতার স্বার্থে আমাদের সকল আবেদনকারীদের জানা আবশ্যক</p>
+          </div>
+        </div>
+
+        <ul class="space-y-2.5 text-xs sm:text-sm text-slate-800 font-medium list-disc pl-5">
+          <li>
+            <strong class="text-slate-900">ভিসা অনুমোদন সম্পূর্ণভাবে সংশ্লিষ্ট দূতাবাস বা কর্তৃপক্ষের সিদ্ধান্তের উপর নির্ভরশীল।</strong>
+          </li>
+          <li>
+            <strong class="text-slate-900">আমরা কোনো ধরণের "Guaranteed Visa" বা "100% Visa Guarantee" প্রদান করি না।</strong>
+          </li>
+          <li>
+            <strong class="text-slate-900">সকল সেবা সংশ্লিষ্ট দেশের নীতিমালা ও আইন অনুযায়ী পরিচালিত হয়।</strong>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE ASSESSMENT & CONTACT SECTION -->
+  <section id="contact" class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Contact Details Left -->
+        <div class="lg:col-span-5 space-y-6">
+          <div class="inline-flex items-center gap-2 bg-brand-50 text-brand-800 px-3.5 py-1 rounded-full text-xs font-bold">
+            <i class="fa-solid fa-headset text-accent-500"></i> যোগাযোগ করুন
+          </div>
+
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-900 leading-tight">
+            আরও বিস্তারিত তথ্যের জন্য আমাদের অফিসে আসুন
+          </h2>
+
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            আপনার ক্যারিয়ার সংক্রান্ত যেকোনো প্রশ্ন বা বিনামূল্যে ফাইল এসেসমেন্টের জন্য সরাসরি ফোন করুন অথবা আমাদের অফিসে আমন্ত্রণ রইল।
+          </p>
+
+          <div class="space-y-4 pt-2">
+            
+            <!-- Address Card -->
+            <div class="flex items-start gap-3.5 p-4 bg-slate-50 rounded-2xl border border-slate-200">
+              <div class="w-10 h-10 rounded-xl bg-brand-900 text-white flex items-center justify-center text-lg flex-shrink-0 mt-1">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-xs text-slate-500 uppercase">অফিসের ঠিকানা</h4>
+                <p class="text-xs sm:text-sm font-semibold text-slate-800 mt-0.5">
+                  68/69 Green Road, Concept Tower, 2nd Floor, Shop No. 225/226, Dhaka-1205, Bangladesh
+                </p>
+              </div>
+            </div>
+
+            <!-- Phone / WhatsApp Card -->
+            <div class="flex items-start gap-3.5 p-4 bg-slate-50 rounded-2xl border border-slate-200">
+              <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center text-lg flex-shrink-0 mt-1">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-xs text-slate-500 uppercase">ফোন ও হোয়াটসঅ্যাপ</h4>
+                <div class="space-y-1 mt-1 font-mono text-xs sm:text-sm">
+                  <p class="font-bold text-slate-800">+8801408200200</p>
+                  <p class="font-bold text-emerald-700">+8801940904090 <span class="text-[10px] font-sans font-normal text-slate-500">(WhatsApp Available)</span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Email & Website -->
+            <div class="flex items-start gap-3.5 p-4 bg-slate-50 rounded-2xl border border-slate-200">
+              <div class="w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center text-lg flex-shrink-0 mt-1">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-xs text-slate-500 uppercase">ইমেইল ও ওয়েবসাইট</h4>
+                <p class="text-xs sm:text-sm font-semibold text-slate-800 mt-0.5">worldwidecareersolution@gmail.com</p>
+                <p class="text-xs sm:text-sm font-bold text-brand-800">www.worldwidecareersolution.com</p>
+              </div>
+            </div>
+
+            <!-- QR Scanner Banner -->
+            <div onclick="openQRModal()" class="p-4 bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-2xl cursor-pointer hover:shadow-lg transition flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <i class="fa-solid fa-qrcode text-3xl"></i>
+                <div>
+                  <h4 class="font-bold text-xs uppercase">QR কোড স্ক্যান করুন</h4>
+                  <p class="text-[11px] opacity-90">অফিসের ঠিকানা ও কন্টাক্ট ইনফো মোবাইলে সেভ করুন</p>
+                </div>
+              </div>
+              <span class="px-3 py-1 bg-white/20 rounded-lg text-xs font-bold">SCAN ME</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Assessment Form Right -->
+        <div id="assessment-calculator" class="lg:col-span-7">
+          <div class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-lg">
+            
+            <div class="border-b border-slate-200 pb-4 mb-6">
+              <h3 class="text-xl font-bold text-brand-900">ফ্রি অনলাইন অ্যাসেসমেন্ট ফর্ম</h3>
+              <p class="text-xs text-slate-500 mt-1">তথ্য জমা দিলে আমাদের পেশাদার কনসালটেন্ট আপনার সাথে যোগাযোগ করবেন</p>
+            </div>
+
+            <form onsubmit="event.preventDefault(); submitFullAssessment();" class="space-y-4">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">আবেদনকারীর নাম *</label>
+                  <input type="text" id="fullFormName" required class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-800 focus:outline-none bg-white">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">মোবাইল নাম্বার *</label>
+                  <input type="tel" id="fullFormPhone" required class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-800 focus:outline-none bg-white">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">ইমেইল ঠিকানা</label>
+                  <input type="email" id="fullFormEmail" class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-800 focus:outline-none bg-white">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">সর্বশেষ শিক্ষাগত যোগ্যতা</label>
+                  <select id="fullFormEdu" class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-800 focus:outline-none bg-white">
+                    <option value="HSC / Alim">এইচএসসি / আলিম / A-Levels</option>
+                    <option value="Honours / Degree">অনার্স / ডিগ্রি / Bachelor</option>
+                    <option value="Masters">মাস্টার্স / Masters</option>
+                    <option value="Diploma">ডিপ্লোমা (Diploma)</option>
+                    <option value="Other">অন্যান্য</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">আগ্রহী সেবা</label>
+                  <select id="fullFormService" class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-800 focus:outline-none bg-white">
+                    <option value="Student Consultancy">স্টুডেন্ট কনসালটেন্সি (উচ্চশিক্ষা)</option>
+                    <option value="Travel Services">ট্রাভেল সেবা ও টিকিট</option>
+                    <option value="Documentation">ডকুমেন্টেশন ও এটেস্টেশন</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 mb-1">পছন্দের দেশ / অঞ্চল</label>
+                  <select id="fullFormCountry" class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-800 focus:outline-none bg-white">
+                    <option value="UK / Europe">যুক্তরাজ্য / ইউরোপ (UK/Europe)</option>
+                    <option value="USA / Canada">যুক্তরাষ্ট্র / কানাডা (USA/Canada)</option>
+                    <option value="Australia">অস্ট্রেলিয়া (Australia)</option>
+                    <option value="Malaysia / Asia">মালয়েশিয়া / এশিয়া (Malaysia/Asia)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1">আপনার মন্তব্য বা বিশেষ প্রশ্ন (যদি থাকে)</label>
+                <textarea id="fullFormNotes" rows="3" class="w-full px-3.5 py-2 text-xs rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-800 focus:outline-none bg-white" placeholder="আইইএলটিএস স্কর, বাজেটের ধারণা বা অন্যান্য প্রশ্ন লিখুন..."></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-3.5 bg-brand-800 hover:bg-brand-900 text-white font-bold text-xs rounded-xl shadow-lg transition flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane text-amber-400"></i> অ্যাসেসমেন্ট রিকোয়েস্ট পাঠান
+              </button>
+
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-900 text-white pt-12 pb-6 border-t border-brand-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-brand-800">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-amber-400 font-bold text-xl">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div>
+              <span class="text-xl font-black tracking-tight text-white block leading-none">Worldwide</span>
+              <span class="text-[10px] font-bold tracking-widest text-amber-400 uppercase">CAREER SOLUTION</span>
+            </div>
+          </div>
+          
+          <p class="text-xs text-slate-300 leading-relaxed max-w-sm">
+            স্টুডেন্ট কনসালটেন্সি | ট্রাভেল সার্ভিসেস | ডকুমেন্টেশন সাপোর্ট
+          </p>
+
+          <p class="text-xs italic text-amber-300">
+            "সঠিক পরামর্শ, নিশ্চিত সহায়তা, সফল ভবিষ্যতের নিশ্চয়তা"
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="md:col-span-3 space-y-2 text-xs text-slate-300">
+          <h4 class="text-sm font-bold text-white mb-3">দ্রুত লিঙ্ক</h4>
+          <p><a href="#about" class="hover:text-amber-400 transition">আমাদের সম্পর্কে</a></p>
+          <p><a href="#regions" class="hover:text-amber-400 transition">গন্তব্য অঞ্চলসমূহ</a></p>
+          <p><a href="#services" class="hover:text-amber-400 transition">আমাদের সেবাসমূহ</a></p>
+          <p><a href="#why-us" class="hover:text-amber-400 transition">কেন Worldwide Career Solution?</a></p>
+        </div>
+
+        <!-- Col 3: Address -->
+        <div class="md:col-span-4 space-y-2 text-xs text-slate-300">
+          <h4 class="text-sm font-bold text-white mb-3">যোগাযোগের ঠিকানা</h4>
+          <p><i class="fa-solid fa-location-dot text-amber-400 mr-1.5"></i> 68/69 Green Road, Concept Tower, 2nd Floor, Shop No. 225/226, Dhaka-1205</p>
+          <p><i class="fa-solid fa-phone text-amber-400 mr-1.5"></i> +8801408200200, +8801940904090</p>
+          <p><i class="fa-solid fa-envelope text-amber-400 mr-1.5"></i> worldwidecareersolution@gmail.com</p>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-[11px] text-slate-400 gap-3 text-center sm:text-left">
+        <p>© 2026 Worldwide Career Solution. All rights reserved.</p>
+        <p>সঠিক পরামর্শ ও বিশ্বস্ততার প্রতীক।</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/8801940904090" target="_blank" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center text-3xl transition transform hover:scale-110">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- MODAL 1: DESTINATION REGION DETAILS -->
+  <div id="regionModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-200">
+      <button onclick="closeRegionModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-xl w-8 h-8 rounded-full flex items-center justify-center bg-slate-100">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="w-12 h-12 rounded-2xl bg-brand-50 text-brand-800 flex items-center justify-center text-2xl mb-4" id="modalRegionIcon">
+        <i class="fa-solid fa-globe"></i>
+      </div>
+
+      <h3 id="modalRegionTitle" class="text-xl font-bold text-brand-900 mb-2"></h3>
+      <p id="modalRegionDesc" class="text-xs text-slate-600 leading-relaxed mb-4"></p>
+
+      <div class="bg-slate-50 p-4 rounded-2xl border border-slate-200 mb-6">
+        <h4 class="text-xs font-bold text-brand-900 uppercase mb-2">জনপ্রিয় দেশসমূহ ও বিশ্ববিদ্যালয়</h4>
+        <ul id="modalRegionList" class="text-xs text-slate-700 space-y-1.5 list-disc pl-4"></ul>
+      </div>
+
+      <button onclick="closeRegionModal(); openAssessmentModal();" class="w-full py-3 bg-brand-800 text-white font-bold text-xs rounded-xl hover:bg-brand-900 transition flex items-center justify-center gap-2">
+        <i class="fa-solid fa-paper-plane text-amber-400"></i> এই অঞ্চলের জন্য ফ্রি অ্যাসেসমেন্ট করুন
+      </button>
+    </div>
+  </div>
+
+  <!-- MODAL 2: QR CODE SCANNER POPUP -->
+  <div id="qrModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-3xl max-w-xs w-full p-6 text-center shadow-2xl relative border border-slate-200">
+      <button onclick="closeQRModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-xl w-8 h-8 rounded-full flex items-center justify-center bg-slate-100">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <h3 class="text-lg font-bold text-brand-900 mb-1">SCAN ME</h3>
+      <p class="text-xs text-slate-500 mb-4">Worldwide Career Solution</p>
+
+      <!-- SVG Rendered QR Code placeholder -->
+      <div class="w-48 h-48 mx-auto bg-slate-900 p-3 rounded-2xl flex items-center justify-center text-white mb-4 shadow-inner">
+        <svg viewBox="0 0 100 100" class="w-full h-full fill-current text-white">
+          <path d="M0,0 h30 v30 h-30 z M5,5 v20 h20 v-20 z M10,10 h10 v10 h-10 z" />
+          <path d="M70,0 h30 v30 h-30 z M75,5 v20 h20 v-20 z M80,10 h10 v10 h-10 z" />
+          <path d="M0,70 h30 v30 h-30 z M5,75 v20 h20 v-20 z M10,80 h10 v10 h-10 z" />
+          <rect x="40" y="10" width="10" height="20" />
+          <rect x="40" y="40" width="20" height="20" />
+          <rect x="10" y="40" width="20" height="10" />
+          <rect x="70" y="40" width="20" height="20" />
+          <rect x="40" y="70" width="20" height="20" />
+          <rect x="70" y="70" width="20" height="10" />
+        </svg>
+      </div>
+
+      <p class="text-[11px] text-slate-600 font-medium">
+        কনসেপ্ট টাওয়ার, ঢাকা অফিস লোকেশন ও কন্টাক্ট ইনফরমেশন সেভ করুন
+      </p>
+    </div>
+  </div>
+
+  <!-- MODAL 3: SUCCESS FEEDBACK -->
+  <div id="successModal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-3xl max-w-sm w-full p-6 text-center shadow-2xl relative border border-slate-200">
+      <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-2xl mx-auto mb-3">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <h3 class="text-lg font-bold text-slate-900 mb-1">ধন্যবাদ!</h3>
+      <p class="text-xs text-slate-600 mb-4">আপনার তথ্য সফলভাবে পাওয়া গেছে। আমাদের কনসালটেন্ট দ্রুত আপনার সাথে যোগাযোগ করবেন।</p>
+      <button onclick="closeSuccessModal()" class="w-full py-2.5 bg-brand-800 text-white font-bold text-xs rounded-xl hover:bg-brand-900 transition">
+        ঠিক আছে
+      </button>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Region Detail Data
+    const regionData = {
+      Asia: {
+        title: "এশিয়া (Asia)",
+        icon: "fa-mountain-city",
+        desc: "এশিয়ার উন্নত ও সাশ্রয়ী শিক্ষা ব্যবস্থার দেশসমূহে উচ্চশিক্ষা ও ভ্রমণ সুযোগ।",
+        countries: [
+          "মালয়েশিয়া (Malaysia) - শীর্ষ আন্তর্জাতিক ক্যাম্পাসসমূহ",
+          "জাপান (Japan) - স্কলারশিপ ও পার্ট-টাইম কাজ",
+          "দক্ষিণ কোরিয়া (South Korea) - গ্লোবাল টেকনোলজি এডুকেশন",
+          "চীন ও থাইল্যান্ড (China & Thailand)"
+        ]
+      },
+      Europe: {
+        title: "ইউরোপ (Europe)",
+        icon: "fa-building-columns",
+        desc: "শেঙ্গেন সুবিধা ও বিশ্বখ্যাত ইউরোপীয় বিশ্ববিদ্যালয় সমূহে স্টুডেন্ট ভিসা ও ট্রাভেল।",
+        countries: [
+          "যুক্তরাজ্য (UK) - ১ বছরের মাস্টার্স ও পোস্ট স্টাডি ওয়ার্ক ভিসা",
+          "জার্মানি (Germany) - টিউশন ফি মুক্ত শিক্ষা ব্যবস্থা",
+          "হাঙ্গেরি ও পোল্যান্ড (Hungary & Poland) - সাশ্রয়ী ইউরোপীয় ডিগ্রি",
+          "স্ক্যান্ডিনেভিয়ান দেশসমূহ (Sweden, Finland, Denmark)"
+        ]
+      },
+      America: {
+        title: "আমেরিকা (USA & Canada)",
+        icon: "fa-statue-of-liberty",
+        desc: "বিশ্বের শীর্ষ র‍্যাঙ্কিং বিশ্ববিদ্যালয় ও স্থায়ী আবাসন সুবিধার শীর্ষ গন্তব্য।",
+        countries: [
+          "যুক্তরাষ্ট্র (USA) - ব্যাচেলর, মাস্টার্স ও পিএইচডি রিসার্চ",
+          "কানাডা (Canada) - স্টাডি পারমিট ও পিআর (PR) পাথওয়ে",
+          "কমিউনিটি কলেজ ও ডিপ্লোমা পাথওয়ে প্রোগ্রাম"
+        ]
+      },
+      Australia: {
+        title: "অস্ট্রেলিয়া (Australia & NZ)",
+        icon: "fa-earth-oceania",
+        desc: "উচ্চমানের জীবনযাত্রা, ওয়ার্ক পারমিট ও চমৎকার স্কলারশিপ সুবিধা।",
+        countries: [
+          "অস্ট্রেলিয়া (Australia) - গ্রুপ অব এইট (Go8) ইউনিভার্সিটি",
+          "নিউজিল্যান্ড (New Zealand) - চমৎকার কাজের সুযোগ",
+          "ভোকেশনাল ও প্রফেশনাল ডিগ্রি প্রোগ্রাম"
+        ]
+      }
+    };
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+
+    function openRegionModal(regionKey) {
+      const data = regionData[regionKey];
+      if (!data) return;
+
+      document.getElementById('modalRegionTitle').innerText = data.title;
+      document.getElementById('modalRegionDesc').innerText = data.desc;
+      
+      const listEl = document.getElementById('modalRegionList');
+      listEl.innerHTML = '';
+      data.countries.forEach(c => {
+        const li = document.createElement('li');
+        li.innerText = c;
+        listEl.appendChild(li);
+      });
+
+      document.getElementById('regionModal').classList.remove('hidden');
+    }
+
+    function closeRegionModal() {
+      document.getElementById('regionModal').classList.add('hidden');
+    }
+
+    function openQRModal() {
+      document.getElementById('qrModal').classList.remove('hidden');
+    }
+
+    function closeQRModal() {
+      document.getElementById('qrModal').classList.add('hidden');
+    }
+
+    function openAssessmentModal(serviceName = '') {
+      if (serviceName) {
+        document.getElementById('fullFormService').value = serviceName;
+      }
+      document.getElementById('assessment-calculator').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    async function postLead(payload) {
+      const res = await fetch('/api/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      let data = {};
+      try { data = await res.json(); } catch (_) {}
+      if (!res.ok || !data.ok) {
+        throw new Error(data.error || 'Submission failed');
+      }
+      return data;
+    }
+
+    async function submitQuickLead() {
+      const name = document.getElementById('quickName').value.trim();
+      const phone = document.getElementById('quickPhone').value.trim();
+      const service = document.getElementById('quickService').value;
+      const region = document.getElementById('quickRegion').value;
+      const msg = document.getElementById('quickMessage').value.trim();
+
+      if (!name || !phone) {
+        alert("দয়া করে নাম এবং মোবাইল নম্বর সঠিকভাবে পূরণ করুন।");
+        return;
+      }
+
+      const btn = document.querySelector('#quickName')?.form?.querySelector('button[type="submit"]');
+      if (btn) { btn.disabled = true; btn.classList.add('opacity-70'); }
+
+      try {
+        await postLead({
+          type: 'quick',
+          name,
+          phone,
+          service,
+          region,
+          message: msg,
+        });
+        document.getElementById('quickName').value = '';
+        document.getElementById('quickPhone').value = '';
+        document.getElementById('quickMessage').value = '';
+        document.getElementById('successModal').classList.remove('hidden');
+      } catch (err) {
+        console.error(err);
+        // Fallback: WhatsApp if Telegram API is unavailable
+        const text = `Hello Worldwide Career Solution! I am ${name}.%0A*Phone:* ${phone}%0A*Service:* ${service}%0A*Region:* ${region}%0A*Notes:* ${msg}`;
+        window.open(`https://wa.me/8801940904090?text=${text}`, '_blank');
+        alert("Telegram-এ পাঠাতে সমস্যা হয়েছে। WhatsApp খোলা হয়েছে — সেখান থেকেও পাঠাতে পারেন।");
+      } finally {
+        if (btn) { btn.disabled = false; btn.classList.remove('opacity-70'); }
+      }
+    }
+
+    async function submitFullAssessment() {
+      const name = document.getElementById('fullFormName').value.trim();
+      const phone = document.getElementById('fullFormPhone').value.trim();
+      const email = document.getElementById('fullFormEmail').value.trim();
+      const education = document.getElementById('fullFormEdu').value;
+      const service = document.getElementById('fullFormService').value;
+      const country = document.getElementById('fullFormCountry').value;
+      const notes = document.getElementById('fullFormNotes').value.trim();
+
+      if (!name || !phone) {
+        alert("দয়া করে নাম এবং মোবাইল নম্বর সঠিকভাবে পূরণ করুন।");
+        return;
+      }
+
+      const form = document.getElementById('fullFormName').closest('form');
+      const btn = form?.querySelector('button[type="submit"]');
+      const originalHtml = btn ? btn.innerHTML : '';
+      if (btn) {
+        btn.disabled = true;
+        btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin text-amber-400"></i> পাঠানো হচ্ছে...';
+      }
+
+      try {
+        await postLead({
+          type: 'full',
+          name,
+          phone,
+          email,
+          education,
+          service,
+          country,
+          notes,
+        });
+        form?.reset();
+        document.getElementById('successModal').classList.remove('hidden');
+      } catch (err) {
+        console.error(err);
+        alert("ফর্ম জমা দিতে সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন অথবা WhatsApp/কল করুন।\n\n" + (err.message || ''));
+      } finally {
+        if (btn) {
+          btn.disabled = false;
+          btn.innerHTML = originalHtml;
+        }
+      }
+    }
+
+    function closeSuccessModal() {
+      document.getElementById('successModal').classList.add('hidden');
+    }
+  </script>
+</body>
+</html>
