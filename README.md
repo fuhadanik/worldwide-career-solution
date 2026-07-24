@@ -4,7 +4,8 @@ Student consultancy, travel & documentation website (Bengali UI).
 
 ## Live
 
-Deployed on Vercel from this repository.
+- **Website:** https://worldwide-career-solution.vercel.app  
+- **GitHub:** https://github.com/fuhadanik/worldwide-career-solution
 
 ## Forms → Telegram
 
