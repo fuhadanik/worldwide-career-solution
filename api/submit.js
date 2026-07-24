@@ -9,8 +9,8 @@
 
 // Demo hardcode — replace/regenerate for production use
 const DEMO_BOT_TOKEN = "8483167901:AAFNUkXgL5Wqn9y5GDtU0l0NrG1ds3H7so4";
-// Optional fixed chat id (leave empty to auto-detect from people who messaged the bot)
-const DEMO_CHAT_ID = process.env.TELEGRAM_CHAT_ID || "";
+// Fixed chat id from @iamIbrahim1 who messaged the bot
+const DEMO_CHAT_ID = process.env.TELEGRAM_CHAT_ID || "1910951333";
 
 function getToken() {
   return (process.env.TELEGRAM_BOT_TOKEN || DEMO_BOT_TOKEN || "").trim();
